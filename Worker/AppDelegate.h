@@ -10,6 +10,11 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+- (IBAction)loadJSON:(id)sender;
+
+- (IBAction)logData:(id)sender;
+
+- (IBAction)buildParts:(id)sender;
 
 @end
 

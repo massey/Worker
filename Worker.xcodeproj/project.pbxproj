@@ -12,6 +12,8 @@
 		15CA69241B65AB3F0061FF2D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CA69231B65AB3F0061FF2D /* Images.xcassets */; };
 		15CA69271B65AB3F0061FF2D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15CA69251B65AB3F0061FF2D /* MainMenu.xib */; };
 		15CA69331B65AB3F0061FF2D /* WorkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CA69321B65AB3F0061FF2D /* WorkerTests.m */; };
+		15CA693E1B65AE440061FF2D /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CA693D1B65AE440061FF2D /* Worker.m */; };
+		15CA69441B65C8CF0061FF2D /* Nestor.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CA69431B65C8CF0061FF2D /* Nestor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,10 @@
 		15CA692C1B65AB3F0061FF2D /* WorkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CA69311B65AB3F0061FF2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15CA69321B65AB3F0061FF2D /* WorkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkerTests.m; sourceTree = "<group>"; };
+		15CA693C1B65AE440061FF2D /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
+		15CA693D1B65AE440061FF2D /* Worker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
+		15CA69421B65C8CF0061FF2D /* Nestor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nestor.h; sourceTree = "<group>"; };
+		15CA69431B65C8CF0061FF2D /* Nestor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nestor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,10 @@
 				15CA69231B65AB3F0061FF2D /* Images.xcassets */,
 				15CA69251B65AB3F0061FF2D /* MainMenu.xib */,
 				15CA691C1B65AB3F0061FF2D /* Supporting Files */,
+				15CA693C1B65AE440061FF2D /* Worker.h */,
+				15CA693D1B65AE440061FF2D /* Worker.m */,
+				15CA69421B65C8CF0061FF2D /* Nestor.h */,
+				15CA69431B65C8CF0061FF2D /* Nestor.m */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
@@ -210,7 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15CA693E1B65AE440061FF2D /* Worker.m in Sources */,
 				15CA69221B65AB3F0061FF2D /* main.m in Sources */,
+				15CA69441B65C8CF0061FF2D /* Nestor.m in Sources */,
 				15CA69201B65AB3F0061FF2D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
