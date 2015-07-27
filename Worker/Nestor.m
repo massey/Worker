@@ -89,7 +89,7 @@
 
 
 // Calculate the area of the polygon
--(NSNumber*)area
+- (NSNumber*)area
 {
     double result, xi, yi, xj, yj;
     
