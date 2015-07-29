@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "MASGeometry.h"
+#import "MASEntity.h"
 
 @interface MASPart : MASPolyline
 
+@property NSString *material;
+@property id geometry;
 @property NSMutableArray *entities;
 
 @property BOOL flipped;

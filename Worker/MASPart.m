@@ -12,7 +12,7 @@
 
 - (id)initWithObject:(NSDictionary*)object
 {
-    self = [super initWithObject:object];
+    self = [super init];
     
     if (self) {
         
@@ -20,20 +20,13 @@
         NSMutableArray *result = [[NSMutableArray alloc] initWithCapacity:count];
         
         for (int i = 0; i < count; i++) {
-            
-            if (object[@"entities"][i][@"vertices"]) {
-                
-                result[i] = [[MASPolyine alloc] initWithObject:object[@"entities"][i]];
-                
-            } else if (object[@"entities"][i][@"radius"]) {
-                
-                result[i] = [[MASCircle alloc] initWithObject:object[@"entities"][i]];
-                
-            }
+            result[i] = [[MASEntity alloc] initWithObject:object[@"entities"][i]];
             
         }
         
-        _entities = result;
+        self.material = object[@"material"];
+        self.entities = result;
+        self.geometry = [[MASPolyline alloc] initWithArray:object[@"vertices"]];
         
     }
     

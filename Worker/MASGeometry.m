@@ -10,7 +10,6 @@
 
 @implementation MASGeometry
 
-
 - (NSDictionary*)decodeLayerString:(NSString*)layer
 {
     NSMutableDictionary *result = [[NSMutableDictionary alloc] init];
@@ -39,16 +38,19 @@
 }
 
 
+@end
+
+
+@implementation MASPoint
+
 - (id)initWithObject:(NSDictionary*)object
 {
     self = [super init];
     if (self) {
-        
-        _layer = object[@"layer"];
-        
-        _face = [self decodeLayerString:_layer][@"face"];
-        
+        _x = [object[@"x"] intValue];
+        _y = [object[@"y"] intValue];
     }
+    
     return self;
 }
 
@@ -57,18 +59,18 @@
 
 @implementation MASPolyline
 
-- (id)initWithObject:(NSDictionary*)object
+- (id)initWithArray:(NSArray*)array
 {
-    self = [super initWithObject:object];
+    self = [super init];
     if (self) {
         
-        NSUInteger count = [object[@"vertices"] count];
+        NSUInteger count = [array count];
         
         NSMutableArray *result = [[NSMutableArray alloc] initWithCapacity:count];
         
         for (int i = 0; i < count; i++) {
             
-            result[i] = [[MASPoint alloc] initWithObject:object[@"vertices"][i]];
+            result[i] = [[MASPoint alloc] initWithObject:array[i]];
             
         }
         

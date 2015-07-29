@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150EE3A11B6856A3000446AE /* MASPartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 150EE3A01B6856A3000446AE /* MASPartTests.m */; };
 		151BADFD1B67396800989575 /* MASGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BADFC1B67396800989575 /* MASGeometry.m */; };
 		151BAE001B673A0D00989575 /* MASPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BADFF1B673A0D00989575 /* MASPart.m */; };
 		151BAE061B67661C00989575 /* MASEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BAE051B67661C00989575 /* MASEntity.m */; };
@@ -16,7 +17,6 @@
 		15CA69271B65AB3F0061FF2D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15CA69251B65AB3F0061FF2D /* MainMenu.xib */; };
 		15CA69331B65AB3F0061FF2D /* WorkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CA69321B65AB3F0061FF2D /* WorkerTests.m */; };
 		15CA693E1B65AE440061FF2D /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CA693D1B65AE440061FF2D /* Worker.m */; };
-		15CA69441B65C8CF0061FF2D /* Nestor.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CA69431B65C8CF0061FF2D /* Nestor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		150EE3A01B6856A3000446AE /* MASPartTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASPartTests.m; sourceTree = "<group>"; };
 		151BADFB1B67396800989575 /* MASGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASGeometry.h; sourceTree = "<group>"; };
 		151BADFC1B67396800989575 /* MASGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASGeometry.m; sourceTree = "<group>"; };
 		151BADFE1B673A0D00989575 /* MASPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPart.h; sourceTree = "<group>"; };
@@ -48,8 +49,6 @@
 		15CA69321B65AB3F0061FF2D /* WorkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkerTests.m; sourceTree = "<group>"; };
 		15CA693C1B65AE440061FF2D /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
 		15CA693D1B65AE440061FF2D /* Worker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
-		15CA69421B65C8CF0061FF2D /* Nestor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nestor.h; sourceTree = "<group>"; };
-		15CA69431B65C8CF0061FF2D /* Nestor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nestor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,17 +94,15 @@
 				15CA691F1B65AB3F0061FF2D /* AppDelegate.m */,
 				15CA69231B65AB3F0061FF2D /* Images.xcassets */,
 				15CA69251B65AB3F0061FF2D /* MainMenu.xib */,
-				15CA691C1B65AB3F0061FF2D /* Supporting Files */,
 				15CA693C1B65AE440061FF2D /* Worker.h */,
 				15CA693D1B65AE440061FF2D /* Worker.m */,
 				151BADFB1B67396800989575 /* MASGeometry.h */,
-				151BADFE1B673A0D00989575 /* MASPart.h */,
-				151BADFF1B673A0D00989575 /* MASPart.m */,
 				151BADFC1B67396800989575 /* MASGeometry.m */,
 				151BAE041B67661C00989575 /* MASEntity.h */,
 				151BAE051B67661C00989575 /* MASEntity.m */,
-				15CA69421B65C8CF0061FF2D /* Nestor.h */,
-				15CA69431B65C8CF0061FF2D /* Nestor.m */,
+				151BADFE1B673A0D00989575 /* MASPart.h */,
+				151BADFF1B673A0D00989575 /* MASPart.m */,
+				15CA691C1B65AB3F0061FF2D /* Supporting Files */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
@@ -122,6 +119,7 @@
 		15CA692F1B65AB3F0061FF2D /* WorkerTests */ = {
 			isa = PBXGroup;
 			children = (
+				150EE3A01B6856A3000446AE /* MASPartTests.m */,
 				15CA69321B65AB3F0061FF2D /* WorkerTests.m */,
 				15CA69301B65AB3F0061FF2D /* Supporting Files */,
 			);
@@ -238,7 +236,6 @@
 				15CA693E1B65AE440061FF2D /* Worker.m in Sources */,
 				15CA69221B65AB3F0061FF2D /* main.m in Sources */,
 				151BAE001B673A0D00989575 /* MASPart.m in Sources */,
-				15CA69441B65C8CF0061FF2D /* Nestor.m in Sources */,
 				151BAE061B67661C00989575 /* MASEntity.m in Sources */,
 				15CA69201B65AB3F0061FF2D /* AppDelegate.m in Sources */,
 				151BADFD1B67396800989575 /* MASGeometry.m in Sources */,
@@ -249,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150EE3A11B6856A3000446AE /* MASPartTests.m in Sources */,
 				15CA69331B65AB3F0061FF2D /* WorkerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

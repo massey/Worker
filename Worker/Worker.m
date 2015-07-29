@@ -7,6 +7,7 @@
 //
 
 #import "Worker.h"
+#import "MASPart.h"
 
 @implementation MASWorker
 
@@ -16,12 +17,11 @@
     
 }
 
-- (void)buildParts {
-    
+- (void)buildParts
+{
     NSUInteger count = [_data count];
     
     if (!count > 0) {
-        
         return;
         
     }
@@ -29,10 +29,8 @@
     for (int i = 0; i < count; i++) {
         
         if (_data[i][@"material"]) {
-            
             [_parts addObject:[[MASPart alloc] initWithObject:_data[i]]];
-            
-            _numberOfPartsToNest = [NSNumber numberWithInt:[_numberOfPartsToNest intValue] + 1];
+            _numberOfPartsToNest++;
             
         }
         

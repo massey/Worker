@@ -8,26 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MASPoint : NSObject
 
-@property int x;
-@property int y;
-
-- (void)moveByVector:(id)vector;
-
-- (void)rotateAtBasePoint:(MASPoint*)basepoint throughAngle:(NSNumber*)angle;
+@interface MASGeometry : NSObject
 
 @end
 
 
-@interface MASGeometry : NSObject
+@interface MASPoint : MASGeometry
 
-@property NSNumber *face;
-@property NSString *layer;
-
-- (void)moveByVector:(id)vector;
-
-- (void)rotateAtBasePoint:(MASPoint*)basepoint throughAngle:(NSNumber*)angle;
+@property int x;
+@property int y;
 
 @end
 
@@ -36,7 +26,7 @@
 
 @property NSArray *vertices;
 
-- (id)initWithObject:(NSDictionary*)object;
+- (id)initWithArray:(NSArray*)array;
 
 - (NSNumber*)area;
 

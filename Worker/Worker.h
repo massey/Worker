@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Nestor.h"
 
 @interface MASWorker : NSObject
 
-@property NSNumber *numberOfPartsToNest;
+@property  int numberOfPartsToNest;
 
 @property id data;
 
