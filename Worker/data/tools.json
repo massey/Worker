@@ -1,0 +1,20 @@
+{
+  "10COMP3F":{
+    "diameter":10.0,
+    "usableLength":28,
+    "type":"rout",
+    "usage":0
+  },
+  "5MM":{
+    "diameter":5.0,
+    "usableLength":50.0,
+    "type":"bore",
+    "usage":0
+  },
+  "3MM":{
+    "diameter":5.0,
+    "usableLength":50.0,
+    "type":"bore",
+    "usage":0
+  }
+}

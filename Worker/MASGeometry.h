@@ -7,28 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DXFReader.h"
 
+@class MASEntity;
+@class MASPoint;
 
 @interface MASGeometry : NSObject
 
 @end
 
 
-@interface MASPoint : MASGeometry
+@interface MASPoint : NSObject
 
-@property int x;
-@property int y;
+@property double x;
+@property double y;
+@property double bulge;
 
-@end
+- (id)initWithObject:(NSDictionary*)object;
+- (id)initWithDXFVertex:(DXFVertex*)vertex;
 
-
-@interface MASPolyline : MASGeometry
-
-@property NSArray *vertices;
-
-- (id)initWithArray:(NSArray*)array;
-
-- (NSNumber*)area;
+- (NSString*)DXFString;
 
 @end
 
@@ -36,8 +34,11 @@
 @interface MASCircle : MASGeometry
 
 @property MASPoint *centre;
-@property int *radius;
+@property double radius;
 
 - (id)initWithObject:(NSDictionary*)object;
+- (id)initWithDXFCircle:(DXFCircle*)circle;
+
+- (NSString*)DXFString;
 
 @end

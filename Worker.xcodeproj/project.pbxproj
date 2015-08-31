@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150DF0951B842B7E006485AB /* MASMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = 150DF0941B842B7E006485AB /* MASMaterial.m */; };
 		150EE3A11B6856A3000446AE /* MASPartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 150EE3A01B6856A3000446AE /* MASPartTests.m */; };
+		150EE3A41B6F0423000446AE /* OutlineViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 150EE3A31B6F0423000446AE /* OutlineViewControllers.m */; };
+		150EE3A71B6F137B000446AE /* MASJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 150EE3A61B6F137B000446AE /* MASJob.m */; };
+		150EE3AA1B6F13E8000446AE /* MASUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 150EE3A91B6F13E8000446AE /* MASUnit.m */; };
+		150EE3AD1B7041C8000446AE /* MASSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 150EE3AC1B7041C8000446AE /* MASSheet.m */; };
+		150EE3B01B707E9E000446AE /* DXFReader.c in Sources */ = {isa = PBXBuildFile; fileRef = 150EE3AE1B707E9E000446AE /* DXFReader.c */; };
+		150EE3B61B742EA8000446AE /* MASPolyline.mm in Sources */ = {isa = PBXBuildFile; fileRef = 150EE3B51B742EA8000446AE /* MASPolyline.mm */; };
+		150EE3C71B7C26D4000446AE /* machine.json in Resources */ = {isa = PBXBuildFile; fileRef = 150EE3C21B7C26D4000446AE /* machine.json */; };
+		150EE3C81B7C26D4000446AE /* materials.json in Resources */ = {isa = PBXBuildFile; fileRef = 150EE3C31B7C26D4000446AE /* materials.json */; };
+		150EE3C91B7C26D4000446AE /* pricing.json in Resources */ = {isa = PBXBuildFile; fileRef = 150EE3C41B7C26D4000446AE /* pricing.json */; };
+		150EE3CA1B7C26D4000446AE /* process.json in Resources */ = {isa = PBXBuildFile; fileRef = 150EE3C51B7C26D4000446AE /* process.json */; };
+		150EE3CB1B7C26D4000446AE /* tools.json in Resources */ = {isa = PBXBuildFile; fileRef = 150EE3C61B7C26D4000446AE /* tools.json */; };
 		151BADFD1B67396800989575 /* MASGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BADFC1B67396800989575 /* MASGeometry.m */; };
 		151BAE001B673A0D00989575 /* MASPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BADFF1B673A0D00989575 /* MASPart.m */; };
 		151BAE061B67661C00989575 /* MASEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BAE051B67661C00989575 /* MASEntity.m */; };
@@ -17,6 +29,8 @@
 		15CA69271B65AB3F0061FF2D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15CA69251B65AB3F0061FF2D /* MainMenu.xib */; };
 		15CA69331B65AB3F0061FF2D /* WorkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CA69321B65AB3F0061FF2D /* WorkerTests.m */; };
 		15CA693E1B65AE440061FF2D /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CA693D1B65AE440061FF2D /* Worker.m */; };
+		15F5FD291B8EA47E00580324 /* MASVector.cc in Sources */ = {isa = PBXBuildFile; fileRef = 15F5FD271B8EA47E00580324 /* MASVector.cc */; };
+		15F5FD2B1B8EC87E00580324 /* MASPolylineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F5FD2A1B8EC87E00580324 /* MASPolylineTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +44,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		150DF0931B842B7E006485AB /* MASMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASMaterial.h; sourceTree = "<group>"; };
+		150DF0941B842B7E006485AB /* MASMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASMaterial.m; sourceTree = "<group>"; };
 		150EE3A01B6856A3000446AE /* MASPartTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASPartTests.m; sourceTree = "<group>"; };
+		150EE3A21B6F0423000446AE /* OutlineViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutlineViewControllers.h; sourceTree = "<group>"; };
+		150EE3A31B6F0423000446AE /* OutlineViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutlineViewControllers.m; sourceTree = "<group>"; };
+		150EE3A51B6F137B000446AE /* MASJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASJob.h; sourceTree = "<group>"; };
+		150EE3A61B6F137B000446AE /* MASJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASJob.m; sourceTree = "<group>"; };
+		150EE3A81B6F13E8000446AE /* MASUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUnit.h; sourceTree = "<group>"; };
+		150EE3A91B6F13E8000446AE /* MASUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASUnit.m; sourceTree = "<group>"; };
+		150EE3AB1B7041C8000446AE /* MASSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASSheet.h; sourceTree = "<group>"; };
+		150EE3AC1B7041C8000446AE /* MASSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASSheet.m; sourceTree = "<group>"; };
+		150EE3AE1B707E9E000446AE /* DXFReader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DXFReader.c; sourceTree = "<group>"; };
+		150EE3AF1B707E9E000446AE /* DXFReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXFReader.h; sourceTree = "<group>"; };
+		150EE3B41B742EA8000446AE /* MASPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPolyline.h; path = ../MASPolyline.h; sourceTree = "<group>"; };
+		150EE3B51B742EA8000446AE /* MASPolyline.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MASPolyline.mm; path = ../MASPolyline.mm; sourceTree = "<group>"; };
+		150EE3C21B7C26D4000446AE /* machine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = machine.json; sourceTree = "<group>"; };
+		150EE3C31B7C26D4000446AE /* materials.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = materials.json; sourceTree = "<group>"; };
+		150EE3C41B7C26D4000446AE /* pricing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pricing.json; sourceTree = "<group>"; };
+		150EE3C51B7C26D4000446AE /* process.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = process.json; sourceTree = "<group>"; };
+		150EE3C61B7C26D4000446AE /* tools.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tools.json; sourceTree = "<group>"; };
 		151BADFB1B67396800989575 /* MASGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASGeometry.h; sourceTree = "<group>"; };
 		151BADFC1B67396800989575 /* MASGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASGeometry.m; sourceTree = "<group>"; };
 		151BADFE1B673A0D00989575 /* MASPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPart.h; sourceTree = "<group>"; };
@@ -49,6 +82,9 @@
 		15CA69321B65AB3F0061FF2D /* WorkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkerTests.m; sourceTree = "<group>"; };
 		15CA693C1B65AE440061FF2D /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
 		15CA693D1B65AE440061FF2D /* Worker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
+		15F5FD271B8EA47E00580324 /* MASVector.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MASVector.cc; sourceTree = "<group>"; };
+		15F5FD281B8EA47E00580324 /* MASVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASVector.h; sourceTree = "<group>"; };
+		15F5FD2A1B8EC87E00580324 /* MASPolylineTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASPolylineTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +105,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		150EE3C11B7C26D4000446AE /* data */ = {
+			isa = PBXGroup;
+			children = (
+				150EE3C21B7C26D4000446AE /* machine.json */,
+				150EE3C31B7C26D4000446AE /* materials.json */,
+				150EE3C41B7C26D4000446AE /* pricing.json */,
+				150EE3C51B7C26D4000446AE /* process.json */,
+				150EE3C61B7C26D4000446AE /* tools.json */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		15CA69101B65AB3F0061FF2D = {
 			isa = PBXGroup;
 			children = (
@@ -94,14 +142,30 @@
 				15CA691F1B65AB3F0061FF2D /* AppDelegate.m */,
 				15CA69231B65AB3F0061FF2D /* Images.xcassets */,
 				15CA69251B65AB3F0061FF2D /* MainMenu.xib */,
+				150EE3A21B6F0423000446AE /* OutlineViewControllers.h */,
+				150EE3A31B6F0423000446AE /* OutlineViewControllers.m */,
+				150EE3AF1B707E9E000446AE /* DXFReader.h */,
+				150EE3AE1B707E9E000446AE /* DXFReader.c */,
+				150EE3AB1B7041C8000446AE /* MASSheet.h */,
+				150EE3AC1B7041C8000446AE /* MASSheet.m */,
+				150EE3A81B6F13E8000446AE /* MASUnit.h */,
+				150EE3A91B6F13E8000446AE /* MASUnit.m */,
+				150EE3A51B6F137B000446AE /* MASJob.h */,
+				150EE3A61B6F137B000446AE /* MASJob.m */,
 				15CA693C1B65AE440061FF2D /* Worker.h */,
 				15CA693D1B65AE440061FF2D /* Worker.m */,
 				151BADFB1B67396800989575 /* MASGeometry.h */,
 				151BADFC1B67396800989575 /* MASGeometry.m */,
+				150EE3B41B742EA8000446AE /* MASPolyline.h */,
+				150EE3B51B742EA8000446AE /* MASPolyline.mm */,
 				151BAE041B67661C00989575 /* MASEntity.h */,
 				151BAE051B67661C00989575 /* MASEntity.m */,
 				151BADFE1B673A0D00989575 /* MASPart.h */,
 				151BADFF1B673A0D00989575 /* MASPart.m */,
+				150DF0931B842B7E006485AB /* MASMaterial.h */,
+				150DF0941B842B7E006485AB /* MASMaterial.m */,
+				15F5FD281B8EA47E00580324 /* MASVector.h */,
+				15F5FD271B8EA47E00580324 /* MASVector.cc */,
 				15CA691C1B65AB3F0061FF2D /* Supporting Files */,
 			);
 			path = Worker;
@@ -110,6 +174,7 @@
 		15CA691C1B65AB3F0061FF2D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				150EE3C11B7C26D4000446AE /* data */,
 				15CA691D1B65AB3F0061FF2D /* Info.plist */,
 				15CA69211B65AB3F0061FF2D /* main.m */,
 			);
@@ -120,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				150EE3A01B6856A3000446AE /* MASPartTests.m */,
+				15F5FD2A1B8EC87E00580324 /* MASPolylineTests.m */,
 				15CA69321B65AB3F0061FF2D /* WorkerTests.m */,
 				15CA69301B65AB3F0061FF2D /* Supporting Files */,
 			);
@@ -214,8 +280,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150EE3C81B7C26D4000446AE /* materials.json in Resources */,
+				150EE3CB1B7C26D4000446AE /* tools.json in Resources */,
+				150EE3CA1B7C26D4000446AE /* process.json in Resources */,
 				15CA69241B65AB3F0061FF2D /* Images.xcassets in Resources */,
 				15CA69271B65AB3F0061FF2D /* MainMenu.xib in Resources */,
+				150EE3C91B7C26D4000446AE /* pricing.json in Resources */,
+				150EE3C71B7C26D4000446AE /* machine.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,11 +305,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				15CA693E1B65AE440061FF2D /* Worker.m in Sources */,
+				150EE3B01B707E9E000446AE /* DXFReader.c in Sources */,
+				15F5FD291B8EA47E00580324 /* MASVector.cc in Sources */,
+				150EE3A41B6F0423000446AE /* OutlineViewControllers.m in Sources */,
 				15CA69221B65AB3F0061FF2D /* main.m in Sources */,
+				150DF0951B842B7E006485AB /* MASMaterial.m in Sources */,
 				151BAE001B673A0D00989575 /* MASPart.m in Sources */,
 				151BAE061B67661C00989575 /* MASEntity.m in Sources */,
+				150EE3AD1B7041C8000446AE /* MASSheet.m in Sources */,
+				150EE3AA1B6F13E8000446AE /* MASUnit.m in Sources */,
 				15CA69201B65AB3F0061FF2D /* AppDelegate.m in Sources */,
+				150EE3B61B742EA8000446AE /* MASPolyline.mm in Sources */,
 				151BADFD1B67396800989575 /* MASGeometry.m in Sources */,
+				150EE3A71B6F137B000446AE /* MASJob.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				150EE3A11B6856A3000446AE /* MASPartTests.m in Sources */,
+				15F5FD2B1B8EC87E00580324 /* MASPolylineTests.m in Sources */,
 				15CA69331B65AB3F0061FF2D /* WorkerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

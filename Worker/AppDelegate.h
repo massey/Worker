@@ -7,14 +7,18 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Worker.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property MASWorker *worker;
+@property (weak) IBOutlet NSOutlineView *jobsOutlineView;
+
 - (IBAction)loadJSON:(id)sender;
 
-- (IBAction)logData:(id)sender;
-
 - (IBAction)buildParts:(id)sender;
+
+- (IBAction)writeDrillingFiles:(id)sender;
 
 @end
 

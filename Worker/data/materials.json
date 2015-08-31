@@ -1,0 +1,32 @@
+{
+  "eply1850":{
+    "cost":40,
+    "sheetSizes":{
+      "2440x1220":{
+        "length":2440,
+        "width":1220
+      }
+    },
+    "thickness":18.5
+  },
+  "cdply1900":{
+      "cost":22,
+      "sheetSizes":{
+          "2400x1200":{
+              "length":2400,
+              "width":1200
+          }
+      },
+      "thickness":19
+  },
+  "coatings":{
+    "000":{
+      "desc":"Unfinished.",
+      "cost":0,
+    },
+    "001":{
+      "desc":"Clear satin.",
+      "cost":4.0,
+    }
+  }
+}

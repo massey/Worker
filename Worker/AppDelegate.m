@@ -7,22 +7,19 @@
 //
 
 #import "AppDelegate.h"
-#import "Worker.h"
 
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
-
-@property MASWorker *worker;
 
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    _window.titleVisibility = NSWindowTitleHidden;
     
     _worker = [[MASWorker alloc] init];
-    
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -33,32 +30,43 @@
     
     NSOpenPanel *loadJSON = [NSOpenPanel openPanel];
     
+    [loadJSON setAllowedFileTypes:@[@"json", @"dxf"]];
+    
     [loadJSON beginSheetModalForWindow:self.window completionHandler:^(NSInteger result) {
         
         if (result == NSFileHandlingPanelOKButton) {
             
-            NSLog(@"The filename was: %@", loadJSON.URLs[0]);
-            
-            _worker.data = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:loadJSON.URLs[0]]
-                                                        options:NSJSONReadingMutableContainers
-                                                          error:nil];
-            
+            if ([[loadJSON.URLs[0] pathExtension] isEqualToString:@"json"]) {
+                
+                NSLog(@"The filename was: %@", loadJSON.URLs[0]);
+                
+                [_worker loadJSON:loadJSON.URLs[0]];
+                
+                [_worker buildParts];
+                
+                [_jobsOutlineView reloadData];
+                
+            } else if ([[loadJSON.URLs[0] pathExtension] isEqualToString:@"dxf"]) {
+                
+                [_worker loadDXF:loadJSON.URLs[0]];
+                [_jobsOutlineView reloadData];
+                
+            }
         }
-        
     }];
-    
 }
 
-- (IBAction)logData:(id)sender {
-    
-    [_worker logData];
-    
-}
 
 - (IBAction)buildParts:(id)sender {
     
     [_worker buildParts];
     
+}
+
+
+- (IBAction)writeDrillingFiles:(id)sender
+{
+    [_worker writeDrillingFiles];
 }
 
 @end

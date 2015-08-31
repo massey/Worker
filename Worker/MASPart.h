@@ -8,26 +8,37 @@
 
 #import <Foundation/Foundation.h>
 #import "MASGeometry.h"
-#import "MASEntity.h"
+#import "DXFReader.h"
 
-@interface MASPart : MASPolyline
+@class MASPolyline;
+@class MASEntity;
+@class MASMaterial;
 
-@property NSString *material;
-@property id geometry;
+@interface MASPart : NSObject
+
+@property NSString *id;
+
+@property MASMaterial *material;
+@property MASPolyline *polyline;
+@property NSNumber *depth;
 @property NSMutableArray *entities;
+@property NSArray *hardware;
 
 @property BOOL flipped;
 @property NSNumber *rotation;
 @property NSNumber *grainDirection;
 
 - (id)initWithObject:(NSDictionary*)object;
+- (id)initWithMASEntity:(MASEntity*)polyline;
+- (id)initWithDXFEntity:(DXFEntity*)entity;
 
-- (NSNumber*)perimeter;
+- (NSNumber*)cost;
+- (NSNumber*)area;
+- (NSNumber*)cutLength;
 
-- (NSArray*)getEntitiesForFace:(NSString*)face;
+- (void)writeDrillingFile;
+//- (void)moveFrom:(MASPoint*)basepoint toDestination:(MASPoint*)destination;
 
-- (void)moveFromBasepoint:(MASPoint*)basepoint toDestination:(MASPoint*)destination;
-
-- (void)rotateAtBasepoint:(MASPoint*)basepoint throughAngle:(NSNumber*)angle;
+//- (void)rotateAtBasepoint:(MASPoint*)basepoint throughAngle:(NSNumber*)angle;
 
 @end
